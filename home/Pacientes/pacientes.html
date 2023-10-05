@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyndSync</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png">
+        <h1>Página de Pacientes</h1>
+    </header>
+    <div id="container">
+        <h2>Adicionar Paciente</h2>
+        <form class="patient-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+            <label for="age">Idade:</label>
+            <input type="number" id="age" required>
+            <label for="diagnosis">Diagnóstico:</label>
+            <input type="text" id="diagnosis" required>
+            <label for="photo">Foto do Paciente:</label>
+            <input type="file" id="photo" accept="image/*" required>
+            <button type="submit">Adicionar Paciente</button>
+        </form>
+        <h2>Lista de Pacientes</h2>
+        <div id="search-form">
+            <label for="search-input">Pesquisar por nome:</label>
+            <input type="text" id="search-input">
+        </div>
+        <div id="patient-list">
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

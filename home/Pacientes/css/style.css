@@ -1,0 +1,123 @@
+/* Definição da fonte e o estilo de fonte para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+
+    /* Definiç~ao da imagem de fundo para o corpo da página */
+    background-image: url('logo.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-image: linear-gradient(to bottom, #b38add, #5900ff); 
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 70px;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+}
+
+#container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+
+.patient-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#search-form {
+    margin-top: 20px;
+}
+
+
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#patient-list {
+    margin-top: 20px;
+}
+
+.patient {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.patient-photo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.patient-details {
+    flex-grow: 1;
+}
+
+.patient-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.patient-age {
+    font-size: 16px;
+    color: #888;
+}
+
+.patient-diagnosis {
+    font-size: 16px;
+}
+
